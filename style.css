@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.topbar {
+  background: #0064b2;
+}
+.topbar .row .col-md-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.topbar .row .col-md-8 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact-medium {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.contact-list li {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #0976cb;
+  padding-right: 15px;
+}
+.contact-list li:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+.contact-list li a {
+  color: #fff;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+.contact-list li i {
+  margin-right: 5px;
+}
+
+/* Media query for font size at window width 1200px */
+@media screen and (max-width: 1200px) {
+  .contact-list li {
+    font-size: 9px;
+  }
+  .Other-links li a {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 979px) {
+  .contact-list li {
+    font-size: 13px;
+  }
+}
+/* Media query to show last two list items at window width 979px */
+@media screen and (max-width: 979px) {
+  .Other-links li {
+    display: none !important;
+  }
+  .Other-links li:nth-last-child(-n+2) {
+    display: inline-block !important;
+  }
+  .Other-links li:nth-last-child(-n+2) a {
+    font-size: 13px;
+  }
+}
+.Other-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.Other-links ul li {
+  color: #fff;
+  margin-right: 15px;
+  height: 40px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #0976cb;
+  padding-right: 15px;
+}
+.Other-links ul li:last-child {
+  border: none !important;
+  background: #ed1c25;
+  margin-left: -21px;
+  padding: 0px 22px;
+}
+.Other-links ul li a {
+  color: #fff;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+.Other-links ul li a:hover {
+  color: #dc143c;
+}
+.Other-links ul li i {
+  margin-right: 5px;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.menu-sticky {
+  margin: 10px 0px;
+  z-index: 999;
+  width: 100%;
+}
+
+.menu-area {
+  background: #ffffff !important;
+}
+.menu-area .logo-part a {
+  text-decoration: none;
+  color: #21a7d0;
+  background-color: transparent !important;
+}
+.menu-area .logo-part .main-logo {
+  max-height: 65px;
+}
+.menu-area .menu-links {
+  height: 70px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.menu-area .menu-links .navbar-nav li {
+  margin-right: 30px;
+  display: inline-block;
+  align-items: center;
+}
+.menu-area .menu-links .navbar-nav li a {
+  color: #111111 !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 9px;
+  margin-right: -5px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .main-logo {
+    max-height: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topbar,
+  .topbar-contact,
+  .menu-links {
+    text-align: center;
+  }
+  .contact-list,
+  .Other-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .navbar-nav li {
+    margin-right: 15px;
+  }
+}
+.banner {
+  position: relative;
+}
+.banner .banner-img img {
+  height: 200px;
+  width: 100%;
+}
+.banner .banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.banner .text {
+  color: #ffffff !important;
+}
+.banner .text .page-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    color: #ffffff !important;
+  }
+  .text .page-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}
+.tabs-container {
+  padding: 40px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #333;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #ddd;
+  background-color: #fff;
+  color: #000;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Add these styles to your existing CSS or in a <style> tag within the <head> of your HTML document */
+.subtle {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tab-content-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tab-content-subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tab-content-list {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.tab-content-list li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* Styles for the link */
+a.text-white {
+  color: white;
+  transition: color 0.3s; /* Adding smooth transition effect */
+}
+
+a.text-white:hover {
+  color: black !important; /* Add !important to override any other styles */
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

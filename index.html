@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7563f2a69a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Landing Page Design and Development</title>
+    <style>
+      .page-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .section {
+          padding: 30px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <!-- Topbar Area Start-->
+      <div class="topbar">
+        <nav class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact-medium">
+                <ul class="contact-list">
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="#">admin@kcc.edu.np</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="#">+977-1-4530239</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8 text-right">
+              <div class="Other-links">
+                <ul class="topbar-contact">
+                  <li class="menu-item"><a href="#">Contact</a></li>
+                  <li class="menu-item"><a href="#">News & Events</a></li>
+                  <li class="menu-item"><a href="#">Publication</a></li>
+                  <li class="menu-item"><a href="#">Feedback</a></li>
+                  <li class="menu-item"><a href="#">Photos & Gallery</a></li>
+                  <li class="menu-item"><a href="#">Inquiry</a></li>
+                  <li class="menu-item"><a href="#">Enroll Now</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Topbar Area End -->
+      <!-- Navbar Start -->
+      <div class="menu-area menu-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="logo-part">
+                <a href="https://kcc.edu.np/">
+                  <img
+                    src="https://kcc.edu.np/wp-content/uploads/2021/12/kantipur-logo-e1674921912737.png"
+                    alt="logo"
+                    class="main-logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="menu-links">
+                <nav class="navbar navbar-expand-lg">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"
+                          >About</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Academics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Departments</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Admission</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Student</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Qaa</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar End -->
+      <section class="banner">
+        <div class="banner-img">
+          <img
+            src="https://kcc.edu.np/wp-content/uploads/2021/11/banner.jpg"
+            alt="Banner Image"
+          />
+        </div>
+        <div class="banner-title text">
+          <h1 class="page-title">Bachelor of Business Administration (BBA)</h1>
+        </div>
+      </section>
+      <section id="tabs-section" class="section">
+        <div class="container">
+          <!-- <h2 class="page-title">Tabs Section</h2> -->
+          <ul class="nav nav-tabs" id="myTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="intro-tab"
+                data-bs-toggle="tab"
+                href="#intro"
+                role="tab"
+                aria-controls="intro"
+                aria-selected="true"
+                >Introduction</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="objectives-tab"
+                data-bs-toggle="tab"
+                href="#objectives"
+                role="tab"
+                aria-controls="objectives"
+                aria-selected="false"
+                >Objectives</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="faculty-tab"
+                data-bs-toggle="tab"
+                href="#faculty"
+                role="tab"
+                aria-controls="faculty"
+                aria-selected="false"
+                >Faculty</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="curriculum-tab"
+                data-bs-toggle="tab"
+                href="#curriculum"
+                role="tab"
+                aria-controls="curriculum"
+                aria-selected="false"
+                >Curriculum</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="placement-tab"
+                data-bs-toggle="tab"
+                href="#placement"
+                role="tab"
+                aria-controls="placement"
+                aria-selected="false"
+                >Placement</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabsContent">
+            <div
+              class="tab-pane fade show active"
+              id="intro"
+              role="tabpanel"
+              aria-labelledby="intro-tab"
+            >
+              <div class="tab-content-item subtle">
+                <h2 class="tab-content-title">Introduction</h2>
+                <p class="tab-content-text">
+                  Kickstart Your Career With BBA Course in Nepal from
+                  <span class="highlight">Kantipur City College (KCC)</span>.
+                  Our BBA program focuses on a strong ethos of openness,
+                  sharing, and commitment, instilling knowledge, skills, and
+                  confidence to excel in the dynamic global environment.
+                </p>
+                <p class="tab-content-text">
+                  Discover a unique 4-year journey that combines mandatory
+                  courses and specialization. Choose from
+                  <span class="highlight">Marketing</span>,
+                  <span class="highlight">HRM</span>,
+                  <span class="highlight">Finance</span>,
+                  <span class="highlight">International Business</span>, and
+                  <span class="highlight">Accounting</span>. Our curriculum,
+                  spanning <span class="highlight">120 credits</span>, ensures a
+                  holistic education.
+                </p>
+                <h3 class="tab-content-subtitle">
+                  Explore Beyond the Curriculum
+                </h3>
+                <ul class="tab-content-list">
+                  <li>
+                    <span class="highlight">Unlock your potential</span> with
+                    Personality Development Course.
+                  </li>
+                  <li>
+                    <span class="highlight">Shape your path</span> with Career
+                    Counseling Program.
+                  </li>
+                  <li>
+                    <span class="highlight">Master financial expertise</span>
+                    with Banking & Insurance Training.
+                  </li>
+                  <li>
+                    <span class="highlight">Excel in practical skills</span>
+                    with SPSS, Tally, FACT Training.
+                  </li>
+                  <li>
+                    <span class="highlight">Enhance communication</span> with
+                    Business Correspondence Writing.
+                  </li>
+                  <li>
+                    <span class="highlight">Strategize growth</span> through
+                    Business Development Planning.
+                  </li>
+                  <li>
+                    <span class="highlight">Gain real-world insights</span> with
+                    On-the-Job Training.
+                  </li>
+                  <li>
+                    <span class="highlight">Polish soft skills</span> for
+                    professional success.
+                  </li>
+                </ul>
+                <h3 class="tab-content-subtitle">Experience KCC Difference</h3>
+                <ul class="tab-content-list">
+                  <li>
+                    <span class="highlight"
+                      >14+ years of academic excellence.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Practical-based learning approach.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Blend of academic and industry expert faculties.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Proven track record of successful placements.</span
+                    >
+                  </li>
+                  <li>
+                    <span class="highlight">Strategic location</span> at the
+                    heart of the capital city.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="objectives"
+              role="tabpanel"
+              aria-labelledby="objectives-tab"
+            >
+              <div class="tab-content-item subtle">
+                <h2 class="tab-content-title">Objectives</h2>
+                <p class="tab-content-text">The course aims to:</p>
+                <ul class="tab-content-list">
+                  <li>
+                    <span class="highlight">Acquire a solid foundation</span> in
+                    core business disciplines such as accounting, finance,
+                    marketing, management, and operations.
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Develop practical skills and competencies</span
+                    >
+                    in areas such as data analysis, communication,
+                    problem-solving, and teamwork.
+                  </li>
+                  <li>
+                    <span class="highlight">Gain a global perspective</span> on
+                    business and understand the impact of international trade,
+                    cultural differences, and economic policies on business
+                    operations.
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Build a strong professional network</span
+                    >
+                    through internships, industry partnerships, and networking
+                    events.
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Develop leadership and management skills</span
+                    >
+                    that are essential for career advancement.
+                  </li>
+                  <li>
+                    <span class="highlight"
+                      >Prepare for graduate-level education</span
+                    >
+                    in business, such as an MBA or a specialized master’s
+                    degree.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="faculty"
+              role="tabpanel"
+              aria-labelledby="faculty-tab"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">S. No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Qualification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>Ashish Aryal</td>
+                    <td>English</td>
+                    <td>MA, TU</td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>Ashish Naulakha</td>
+                    <td>Strategic Management</td>
+                    <td>MBA, KU</td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>Bikash Neupane</td>
+                    <td>IT</td>
+                    <td>MCA</td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>Bishnu Poudel</td>
+                    <td>Marketing</td>
+                    <td>MBS</td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td>Dikshya Rijal</td>
+                    <td>Total Quality Management</td>
+                    <td>MBA, Apex</td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td>Dinesh Basnet</td>
+                    <td>General Management</td>
+                    <td>MBA, India</td>
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td>Hom Bahadur Kshettri</td>
+                    <td>Business Economics</td>
+                    <td>MA</td>
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td>Kishor Basnet</td>
+                    <td>Financial Accountancy</td>
+                    <td>Mphil, MBS</td>
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td>Kiran Pant</td>
+                    <td>Economics</td>
+                    <td>MA</td>
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td>Nirakar C. Pokhrel</td>
+                    <td>Soft Skill Training</td>
+                    <td>MBA, UK</td>
+                  </tr>
+                  <tr>
+                    <td>11.</td>
+                    <td>Padam Dahal</td>
+                    <td>Cost Accounting</td>
+                    <td>MBS</td>
+                  </tr>
+                  <tr>
+                    <td>12.</td>
+                    <td>Raju Kattel</td>
+                    <td>MIS, DBMS, e-Commerce</td>
+                    <td>MCA</td>
+                  </tr>
+                  <tr>
+                    <td>13.</td>
+                    <td>Er. Ramesh Shrestha</td>
+                    <td>IT & Computer Application</td>
+                    <td>MCA</td>
+                  </tr>
+                  <tr>
+                    <td>14.</td>
+                    <td>Ram Niraula</td>
+                    <td>Math</td>
+                    <td>MA</td>
+                  </tr>
+                  <tr>
+                    <td>15.</td>
+                    <td>Rakesh Mishra</td>
+                    <td>General Management</td>
+                    <td>MBS</td>
+                  </tr>
+                  <tr>
+                    <td>16.</td>
+                    <td>Sandeep Shrestha</td>
+                    <td>Operation Management</td>
+                    <td>MBA, KU</td>
+                  </tr>
+                  <tr>
+                    <td>17.</td>
+                    <td>Satish Kumar Shrestha</td>
+                    <td>General Management</td>
+                    <td>MBA, India</td>
+                  </tr>
+                  <tr>
+                    <td>18.</td>
+                    <td>Shaligram Aryal</td>
+                    <td>Taxation</td>
+                    <td>MBS</td>
+                  </tr>
+                  <tr>
+                    <td>19.</td>
+                    <td>Shiva Raj Poudel</td>
+                    <td>Marketing</td>
+                    <td>MBS</td>
+                  </tr>
+                  <tr>
+                    <td>20.</td>
+                    <td>Sushant Marasini</td>
+                    <td>Tourism Management</td>
+                    <td>MPA, MTM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="curriculum"
+              role="tabpanel"
+              aria-labelledby="curriculum-tab"
+            >
+              <p>To be added</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="placement"
+              role="tabpanel"
+              aria-labelledby="placement-tab"
+            >
+              <p>To be added</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="https://kcc.edu.np/wp-content/uploads/2021/12/kantipur-logo-e1674921912737.png"
+                alt="Kantipur City College"
+              />
+            </a>
+            <p class="text-body-secondary">
+              Kantipur City College lays special stress on producing human
+              resources to meet the challenges of contemporary times through
+              transmitting knowledge and skills to the students.
+            </p>
+            <ul class="nav footer-social d-flex">
+              <li class="nav-item me-3">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>News & Events</h5>
+            <ul class="flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  Eighth Issue of Management Scholars Magazine Inaugurated by
+                  Vice Chancellor
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  Archana Pandit Secures Full Scholarship: Ready to Excel in
+                  Master’s Program at Chulalongkorn University
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  About KCC
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Notice</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fas fa-university me-2"></i>Kantipur City College
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fas fa-map-marker-alt me-2"></i>Putalisadak,
+                  Kathmandu
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fas fa-phone me-2"></i>+977-1-4530239, 4537093
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">
+                  <i class="fas fa-envelope me-2"></i>admin@kcc.edu.np
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <div
+        class="d-flex flex-row flex-sm-row justify-content-between pt-4 border-top"
+        style="width: 100%; background-color: #0164b3; color: #ffffff"
+      >
+        <p class="container">
+          © 2023 All Rights Reserved by Kantipur City College. Developed By
+          <a href="#" class="text-white text-decoration-none"
+            >Household Nepal</a
+          >
+        </p>
+
+        <a
+          href="#"
+          id="goToTop"
+          class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+          style="
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+          "
+        >
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+
+      <div id="google-maps" class="google-maps">
+        <!-- Google Maps Embed Code -->
+      </div>
+    </div>
+
+    <!-- Add Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add this at the bottom of your HTML body -->
+
+    <script>
+      // Add this script at the end of your HTML body or within a script tag
+
+      // Get a reference to the "Go to Top" button element
+      const goToTopButton = document.getElementById("goToTop");
+
+      // Add a click event listener to the button
+      goToTopButton.addEventListener("click", () => {
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
